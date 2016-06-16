@@ -1,6 +1,9 @@
 {
   "name": "@popkirby-dotfiles/vim",
   "version": "0.0.1",
+  "script": {
+    "postinstall": "chiery postinstall"
+  },
   "chiery": {
     "link": {
       "vimrc": "$HOME/.vimrc",
