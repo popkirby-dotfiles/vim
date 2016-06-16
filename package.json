@@ -1,0 +1,10 @@
+{
+  "name": "@popkirby-dotfiles/vim",
+  "version": "0.0.1",
+  "chiery": {
+    "link": {
+      "vimrc": "$HOME/.vimrc",
+      "nvimrc": "$HOME/.config/nvim/init.vim"
+    }
+  }
+}
