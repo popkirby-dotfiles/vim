@@ -66,6 +66,8 @@ set display=lastline
 
 set colorcolumn=100
 
+set noshowmode
+
 " syntax
 set background=light
 set termguicolors
