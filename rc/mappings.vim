@@ -2,6 +2,6 @@
 " mappings.vim
 "
 
-" replace ; <=> :
-nnoremap ; :
-nnoremap : ;
+" <CR>: enter command mode
+nnoremap <CR> :
+nnoremap <S-CR> <CR>

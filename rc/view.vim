@@ -72,8 +72,20 @@ set noshowmode
 set background=light
 set termguicolors
 
+" disable Background Color Erase so that tmux can render colorschemes properly
+if &term =~ '256color'
+  set t_ut=
+endif
+
 colorscheme solarized
+
 syntax enable
+
+" no underline for CursorLine
+hi! CursorLine cterm=none
+
+" search result
+hi! Search cterm=reverse
 
 let macvim_skip_colorscheme=1
 let macvim_skip_cmd_opt_movement=1

@@ -22,6 +22,11 @@ endif
 " delete indent/newline with backspace
 set backspace=indent,eol,start
 
+" no auto comment out
+augroup MyAutoCmd
+  autocmd FileType * setlocal formatoptions-=ro
+augroup END
+
 " hightlight pairs
 set showmatch
 set cpoptions-=m

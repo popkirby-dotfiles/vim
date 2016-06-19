@@ -9,6 +9,9 @@ build = 'make'
 repo = 'frankier/neovim-colors-solarized-truecolor-only'
 
 [[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
 let g:lightline = {
