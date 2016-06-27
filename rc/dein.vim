@@ -19,6 +19,10 @@ call dein#begin(s:path, [expand('<sfile>')]
 call dein#load_toml(s:rcdir . '/dein.toml', {'lazy': 0})
 call dein#load_toml(s:rcdir . '/deinlazy.toml', {'lazy': 1})
 
+if has('nvim')
+  call dein#load_toml(s:rcdir . '/deineo.toml', {})
+endif
+
 call dein#end()
 call dein#save_state()
 

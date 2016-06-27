@@ -26,3 +26,11 @@ hook_add = '''
   nmap <silent> k <Plug>(accelerated_jk_gk)
 '''
 
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+depends = 'unite.vim'
+on_map = {n = '<Plug>'}
+on_if = "isdirectory(bufname('%'))"
