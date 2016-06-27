@@ -15,7 +15,7 @@ hook_add = '''
   nmap * <Plug>(anzu-star)
   nmap # <Plug>(anzu-sharp)
 
-  nmap <silent> <Esc><Esc> <Plug>(anzu-clear-search-status) <bar> :nohlsearch<CR>
+  nmap <silent> <Esc><Esc> <Plug>(anzu-clear-search-status)<bar>:nohlsearch<CR>
 '''
 
 [[plugins]]
@@ -34,3 +34,14 @@ repo = 'Shougo/vimfiler.vim'
 depends = 'unite.vim'
 on_map = {n = '<Plug>'}
 on_if = "isdirectory(bufname('%'))"
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = ['javascript']
+hook_source = '''
+  let g:jsx_ext_required = 0
+'''

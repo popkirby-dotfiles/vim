@@ -14,13 +14,15 @@ endif
 let s:rcdir = fnamemodify(resolve(expand('<sfile>')), ':h')
 
 call dein#begin(s:path, [expand('<sfile>')]
-  \ + split(glob(s:rcdir . '/*.toml'), '\n'))
+  \ + split(glob(s:rcdir . '/toml/*.toml'), '\n'))
 
-call dein#load_toml(s:rcdir . '/dein.toml', {'lazy': 0})
-call dein#load_toml(s:rcdir . '/deinlazy.toml', {'lazy': 1})
+call dein#load_toml(s:rcdir . '/toml/dein.toml', {'lazy': 0})
+call dein#load_toml(s:rcdir . '/toml/deinlazy.toml', {'lazy': 1})
 
 if has('nvim')
-  call dein#load_toml(s:rcdir . '/deineo.toml', {})
+  call dein#load_toml(s:rcdir . '/toml/deineo.toml', {})
+else
+  call dein#load_toml(s:rcdir . '/toml/deinvim.toml', {})
 endif
 
 call dein#end()
