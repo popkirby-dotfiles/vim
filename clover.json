@@ -1,0 +1,6 @@
+{
+  "link": {
+    "vimrc": "$HOME/.vimrc",
+    "nvimrc": "$HOME/.config/nvim/init.vim"
+  }
+}
