@@ -45,3 +45,15 @@ on_ft = ['javascript']
 hook_source = '''
   let g:jsx_ext_required = 0
 '''
+
+[[plugins]]
+repo = 'ternjs/tern_for_vim'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = ['rust']
+
+[[plugins]]
+repo = 'racer-rust/vim-racer'
+on_ft = ['rust']
