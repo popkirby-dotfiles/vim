@@ -60,6 +60,8 @@ set updatetime=1000
 set virtualedit=block
 
 " undofile
+set directory-=.
+set directory^=~/.cache/vim
 set undofile
 let &undodir=&directory
 
