@@ -12,6 +12,10 @@ set autoindent smartindent
 " enable modeline
 set modeline
 
+" enable mouse
+set mouse=a
+set ttymouse=xterm2
+
 " use system clipboard
 if has('unnamedplus')
   set clipboard& clipboard+=unnamedplus
