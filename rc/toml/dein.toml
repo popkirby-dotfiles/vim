@@ -62,3 +62,6 @@ endfunction
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'

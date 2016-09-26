@@ -14,3 +14,6 @@ hook_add = '''
   let g:syntastic_check_on_open = 1
   let g:syntastic_check_on_wq = 0
 '''
+
+[[plugins]]
+repo = 'mtscout6/syntastic-local-eslint.vim'
